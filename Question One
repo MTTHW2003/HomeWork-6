@@ -1,0 +1,11 @@
+
+import math
+
+x = float(input("Enter a value for x: "))
+
+if x < 0 or x > 1:
+    print("Error: x must be between 0 and 1.")
+    exit()
+else:
+    result = math.sqrt(x)
+    print("The square root of x is:", result)
