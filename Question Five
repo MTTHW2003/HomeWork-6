@@ -1,0 +1,18 @@
+
+def isPrime(n):
+    found = False
+
+    for factor in range(2, n):
+        if n % factor == 0:
+            found = True
+
+    return not found
+
+number = int(input("Enter an integer: "))
+
+if number < 2:
+    print(number, "is not a prime number.")
+elif isPrime(number):
+    print(number, "is a prime number.")
+else:
+    print(number, "is not a prime number.")
